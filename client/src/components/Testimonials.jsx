@@ -3,17 +3,17 @@ import React, { useState } from 'react';
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
+    name: "Sarah J",
     text: "The bathroom remodel exceeded our expectations. Professional work and attention to detail throughout the project.",
   },
   {
     id: 2,
-    name: "Michael Chen",
+    name: "Michael C",
     text: "Outstanding service! They completed our master bathroom renovation on time and within budget. Highly recommended!",
   },
   {
     id: 3,
-    name: "Emily Rodriguez",
+    name: "Emily R",
     text: "Transformed our outdated bathroom into a modern spa-like retreat. Couldn't be happier with the results.",
   }
 ];

@@ -6,7 +6,7 @@ import ProjectGallery from './components/ProjectGallery';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Footer from './components/Footer';
-import { Analytics } from '@vercel/analytics/react';
+import { AnalyticsWrapper } from './components/AnalyticsWrapper';
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
             <Footer />
           </div>
         </main>
-        <Analytics />
+        <AnalyticsWrapper />
       </div>
     </Router>
   );
