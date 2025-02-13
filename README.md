@@ -4,7 +4,7 @@ Build with React and Vite.
 
 ## Live Application URL
 
-### [pvdcontraction.com](https://www.pvdcontracting.com/)
+### [pvdcontracting.com](https://www.pvdcontracting.com/)
 
 ## License
 
