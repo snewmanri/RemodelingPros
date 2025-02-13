@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "purge": "purgecss --css src/index.css --content src/**/*.jsx --output src/purged.css"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -15,6 +16,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
+    "purgecss": "^7.0.2",
     "vite": "^5.0.12"
   }
 }
