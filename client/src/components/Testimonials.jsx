@@ -5,19 +5,16 @@ const testimonials = [
     id: 1,
     name: "Sarah Johnson",
     text: "The bathroom remodel exceeded our expectations. Professional work and attention to detail throughout the project.",
-    location: "San Francisco"
   },
   {
     id: 2,
     name: "Michael Chen",
     text: "Outstanding service! They completed our master bathroom renovation on time and within budget. Highly recommended!",
-    location: "Bay Area"
   },
   {
     id: 3,
     name: "Emily Rodriguez",
     text: "Transformed our outdated bathroom into a modern spa-like retreat. Couldn't be happier with the results.",
-    location: "Oakland"
   }
 ];
 
@@ -51,7 +48,6 @@ function Testimonials() {
           <blockquote>{testimonials[currentIndex].text}</blockquote>
           <div className="testimonial-author">
             <span className="author-name">{testimonials[currentIndex].name}</span>
-            <span className="author-location">{testimonials[currentIndex].location}</span>
           </div>
         </div>
         <button 
