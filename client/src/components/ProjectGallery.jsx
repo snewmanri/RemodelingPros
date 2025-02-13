@@ -7,21 +7,21 @@ const projects = [
     title: "Modern Master Bathroom",
     description: "Complete renovation with custom tile work and glass shower enclosure",
     type: "Full Remodel",
-    image: "/images/modern-master-bath.jpg"
+    image: "/images/modern-master-bath.webp"
   },
   {
     id: 2,
     title: "Spa-Inspired Retreat",
     description: "Luxury renovation featuring freestanding tub and heated floors",
     type: "Luxury Remodel",
-    image: "/images/spa-bathroom.jpg"
+    image: "/images/spa-bathroom.webp"
   },
   {
     id: 3,
     title: "Contemporary Guest Bath",
     description: "Updated fixtures, lighting, and modern vanity installation",
     type: "Partial Remodel",
-    image: "/images/guest-bath.jpg"
+    image: "/images/guest-bath.webp"
   }
 ];
 
