@@ -6,8 +6,8 @@ import ProjectGallery from './components/ProjectGallery';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import Footer from './components/Footer';
-import { AnalyticsWrapper } from './components/AnalyticsWrapper';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
             <Footer />
           </div>
         </main>
-        <AnalyticsWrapper />
+        <Analytics />
         <SpeedInsights />
       </div>
     </Router>
