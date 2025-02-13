@@ -46,10 +46,14 @@ body {
   text-decoration: none;
   color: #666;
   font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #333;
+  background-color: #f0f0f0;
 }
 
 .hamburger-button {
