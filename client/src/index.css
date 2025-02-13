@@ -128,12 +128,12 @@ body {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease; 
-  cursor: pointer;  
+  transition: transform 0.3s ease;
+  cursor: pointer;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);  
+  transform: translateY(-5px);
 }
 
 .service-card h3 {
@@ -318,26 +318,53 @@ body {
   }
 
   .nav-links {
-    display: none;
-    position: absolute;
-    top: 70px;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     flex-direction: column;
-    background-color: white;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 6rem 2rem 4rem 2rem;  /* Increased top padding */
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    overflow-y: auto;
+    height: 100vh;
   }
 
   .nav-links.active {
+    visibility: visible;
+    opacity: 1;
     display: flex;
   }
 
   .nav-links a {
-    color: #333;
-    text-decoration: none;
-    padding: 1rem;
-    text-align: center;
+    color: white;
+    font-size: clamp(1.2rem, 4vw, 1.5rem);
+    margin: 0.4rem 0;
+    padding: 0.6rem 2rem;
+    width: 100%;       /* Make links full width */
+    text-align: center;  /* Center text */
+  }
+
+  .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+
+  .hamburger-button {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001;
+  }
+
+  .hamburger-button.open span {
+    background: white;
   }
 
   .navbar {
@@ -374,6 +401,18 @@ body {
   text-decoration: underline;
 }
 
+.footer-address h2 a[href="#top"] {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.footer-address h2 a[href="#top"]:hover {
+  opacity: 0.8;
+  background: none;
+  text-decoration: none;
+}
+
 .footer-nav {
   display: flex;
   flex-direction: column;
@@ -386,7 +425,7 @@ body {
 }
 
 .footer-nav a:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .footer-legal {
@@ -463,9 +502,11 @@ body {
 }
 
 .modal-prev {
-  left: calc(10% + 20px);  /* Closer to the image */
+  left: calc(10% + 20px);
+  /* Closer to the image */
 }
 
 .modal-next {
-  right: calc(10% + 20px);  /* Closer to the image */
+  right: calc(10% + 20px);
+  /* Closer to the image */
 }

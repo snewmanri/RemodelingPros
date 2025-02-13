@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer">
       <section className="footer-content">
         <address className="footer-address">
-          <h2>Ace Deuce Contractors</h2>
+          <h2><a href="#top">Ace Deuce Contractors</a></h2>
           Providence, RI 02908<br />
           Email: 
           <a href="mailto:info@acedeucegc.com">info@acedeucegc.com</a><br />
