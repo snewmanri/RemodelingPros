@@ -66,11 +66,28 @@ body {
 }
 
 .hamburger-button span {
+  display: block;
   width: 30px;
   height: 3px;
   background: #333;
   border-radius: 10px;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Transform spans into X when menu is open */
+.hamburger-button.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+}
+
+.hamburger-button.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-button.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: -8px;
 }
 
 .hero {

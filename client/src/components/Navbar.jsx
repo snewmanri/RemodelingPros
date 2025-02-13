@@ -29,7 +29,7 @@ function Navbar() {
         <Link to="/">Ace Deuce Contractors</Link>
       </div>
       <button 
-        className="hamburger-button" 
+        className={`hamburger-button ${isMenuOpen ? 'open' : ''}`} 
         onClick={toggleMenu}
         aria-label="Toggle navigation menu"
       >
