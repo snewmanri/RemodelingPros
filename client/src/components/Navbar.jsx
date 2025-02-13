@@ -23,10 +23,14 @@ function Navbar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="navbar">
       <div className="nav-brand">
-        <Link to="/">Ace Deuce Contractors</Link>
+        <Link to="/" onClick={handleLinkClick}>Ace Deuce Contractors</Link>
       </div>
       <button 
         className={`hamburger-button ${isMenuOpen ? 'open' : ''}`} 
@@ -38,11 +42,11 @@ function Navbar() {
         <span></span>
       </button>
       <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-        <Link to="/">Home</Link>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#contact">Contact</a>
+        <Link to="/" onClick={handleLinkClick}>Home</Link>
+        <a href="#services" onClick={handleLinkClick}>Services</a>
+        <a href="#projects" onClick={handleLinkClick}>Projects</a>
+        <a href="#testimonials" onClick={handleLinkClick}>Testimonials</a>
+        <a href="#contact" onClick={handleLinkClick}>Contact</a>
       </div>
     </nav>
   );
