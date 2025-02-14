@@ -1,5 +1,5 @@
 # Remodeling pros
-Simple website for a general contractor romdeling website.
+Simple website for a general contractor remodeling website.
 Built with React and Vite.
 
 ## Live Application URL
