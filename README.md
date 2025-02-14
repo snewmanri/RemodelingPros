@@ -1,6 +1,6 @@
 # Remodeling pros
 Simple website for a general contractor romdeling website.
-Build with React and Vite.
+Built with React and Vite.
 
 ## Live Application URL
 
