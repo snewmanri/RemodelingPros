@@ -1,27 +1,23 @@
 import React from 'react';
 
+const services = [
+    { title: "Full Remodeling", description: "Complete bathroom transformation." },
+    { title: "Fixture Updates", description: "Modern fixtures and fittings." },
+    { title: "Tile Work", description: "Custom tile design and installation." },
+    { title: "And More!", description: "Any space, any problem. We do it all!" }
+];
+
 function Services() {
     return (
         <section className="services-preview">
             <h2>Our Services</h2>
             <div className="service-cards">
-                <div className="service-card">
-                    <h3>Full Remodeling</h3>
-                    <p>Complete bathroom transformation.</p>
-                </div>
-                <div className="service-card">
-                    <h3>Fixture Updates</h3>
-                    <p>Modern fixtures and fittings.</p>
-                </div>
-                <div className="service-card">
-                    <h3>Tile Work</h3>
-                    <p>Custom tile design and installation.</p>
-                </div>
-                <div className="service-card">
-                    <h3>And More!</h3>
-                    <p>Any space, any problem. We do it all!</p>
-                </div>
-
+                {services.map((service, index) => (
+                    <div className="service-card" key={index}>
+                        <h3>{service.title}</h3>
+                        <p>{service.description}</p>
+                    </div>
+                ))}
             </div>
         </section>
     );
