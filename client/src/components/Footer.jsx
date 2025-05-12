@@ -7,9 +7,9 @@ function Footer() {
         <address className="footer-address">
           <h2><a href="#top">Ace Deuce Contractors</a></h2>
           Providence, RI 02908<br />
-          Email: <a href="mailto:info@acedeucegc.com">info@acedeucegc.com</a>
+          Email: <a href="mailto:tnewman@acedeucecontractors.com">tnewman@acedeucecontractors.com</a>
           <br />
-          Phone: <a href="tel:+14015555555">(401) 555-5555</a>
+          Phone: <a href="tel:+14017423707">(401) 742-3707</a>
         </address>
         <nav className="footer-nav" aria-label="footer">
           <a href="#services">Our Services</a>
